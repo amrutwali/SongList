@@ -5,6 +5,7 @@ import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 import ButtonBase from "@mui/material/ButtonBase";
+import Divider from "@mui/material/Divider";
 
 const Img = styled("img")({
   margin: "auto",
@@ -30,6 +31,14 @@ const data = [
     rating: 4.8,
     url: "https://ia801209.us.archive.org/31/items/mbid-6460457d-ff6c-4001-bfd7-2f84202077f3/mbid-6460457d-ff6c-4001-bfd7-2f84202077f3-14869027128.jpg",
   },
+  {
+    id: 1004,
+    title: "Am I Wrong",
+    artist: ["Nico & Vinz"],
+    date: "12/04/2013",
+    rating: 3.6,
+    url: "https://ia600200.us.archive.org/8/items/mbid-5dacb6f1-b2b2-46b0-b6b0-5b4d5266cec3/mbid-5dacb6f1-b2b2-46b0-b6b0-5b4d5266cec3-6253105112_thumb500.jpg",
+  },
 ];
 
 export default function SongList() {
@@ -43,16 +52,15 @@ export default function SongList() {
       direction="column"
     >
       {!data && console.log("Data not Recieved")}
-      <Typography
-        variant="h5"
-        noWrap
-        ml={3}
-        component="div"
-        color="primary"
-        sx={{ display: { xs: "none", sm: "block" } }}
+      <Divider
+        sx={{
+          mt: 5,
+        }}
       >
-        Song List
-      </Typography>
+        <Typography variant="h4" color="primary">
+          Song List
+        </Typography>
+      </Divider>
 
       {data.map((song) => (
         <Grid
@@ -87,34 +95,46 @@ export default function SongList() {
                   <Grid item xs>
                     <Typography
                       gutterBottom
-                      variant="subtitle1"
+                      variant="h6"
                       component="div"
+                      color="primary"
+                      m={0}
                     >
                       {song.title}
                     </Typography>
-                    <Typography variant="body2" gutterBottom>
+                    <Typography variant="body1" m={0} gutterBottom>
                       {song.artist.map((rank, i, name) => {
                         if (name.length === i + 1) return `${name}`;
                         else return name.legth;
                       })}
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
+                    <Typography mt={6} variant="body2" color="text.secondary">
                       ID: {song.id}
                     </Typography>
-                  </Grid>
-                  <Grid item>
-                    <Typography sx={{ cursor: "pointer" }} variant="body2">
+                    <Typography
+                      sx={{ cursor: "pointer" }}
+                      variant="body2"
+                      color="secondary"
+                    >
                       {song.date}
                     </Typography>
                   </Grid>
                 </Grid>
-                <Grid item>
+                <Grid item justifyContent="flex-end">
                   <Rating
                     name="half-rating-read"
                     defaultValue={song.rating}
                     precision={0.5}
-                    readonly
+                    readOnly
                   />
+                  <Typography
+                    display="flex"
+                    justifyContent="flex-end"
+                    sx={{ fontWeight: 800 }}
+                    color="text.secondary"
+                  >
+                    {song.rating}
+                  </Typography>
                 </Grid>
               </Grid>
             </Grid>
