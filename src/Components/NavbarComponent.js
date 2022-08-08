@@ -148,7 +148,7 @@ export default function PrimarySearchAppBar() {
             variant="h6"
             noWrap
             component="div"
-            sx={{ display: { xs: "none", sm: "block" } }}
+            sx={{ lineHeight: "40px", display: { xs: "none", sm: "block" } }}
           >
             Songify
           </Typography>
