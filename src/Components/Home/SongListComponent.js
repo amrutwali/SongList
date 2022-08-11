@@ -6,7 +6,8 @@ import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 import ButtonBase from "@mui/material/ButtonBase";
 import Divider from "@mui/material/Divider";
-import data from "../assets/data";
+// Data
+import data from "../../assets/data";
 
 const Img = styled("img")({
   margin: "auto",
@@ -15,16 +16,9 @@ const Img = styled("img")({
   maxHeight: "100%",
 });
 
-export default function SongList() {
+export default function SongList(number) {
   return (
-    <Grid
-      container
-      width="auto"
-      marginX={45}
-      mt={5}
-      sx={{ flexGrow: 1 }}
-      direction="column"
-    >
+    <Grid container mt={5} sx={{ flexGrow: 1 }} direction="column">
       {!data && console.log("Data not Recieved")}
       <Divider
         sx={{
