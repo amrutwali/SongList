@@ -1,13 +1,13 @@
-import NavbarComponent from "./NavbarComponent";
-import SongList from "./SongListComponent";
-import ArtistList from "./ArtistListComponent";
+import { Grid } from "@mui/material";
+// Components
+import SongList from "./Home/SongListComponent";
+import ArtistList from "./Home/ArtistListComponent";
 
 export default function Home() {
   return (
-    <>
-      <NavbarComponent />
-      <SongList />
+    <Grid width="auto" marginX={45}>
+      <SongList number="10" />
       <ArtistList />
-    </>
+    </Grid>
   );
 }
