@@ -1,13 +1,13 @@
 import { Grid } from "@mui/material";
 // Components
 import SongList from "./Home/SongListComponent";
-import ArtistList from "./Home/ArtistListComponent";
 
-export default function Home() {
+const AllSongs = () => {
   return (
     <Grid width="auto" marginX={45}>
-      <SongList number="10" />
-      <ArtistList />
+      <SongList />
     </Grid>
   );
-}
+};
+
+export default AllSongs;
