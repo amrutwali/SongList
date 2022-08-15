@@ -16,6 +16,17 @@ const Img = styled("img")({
   maxHeight: "100%",
 });
 
+function weightedAverage(rating) {
+  const final =
+    (rating[1] * 1 +
+      rating[2] * 2 +
+      rating[3] * 3 +
+      rating[4] * 4 +
+      rating[5] * 5) /
+    (rating[1] + rating[2] + rating[3] + rating[4] + rating[5]);
+  return final;
+}
+
 export default function SongList(number) {
   return (
     <Grid container mt={5} sx={{ flexGrow: 1 }} direction="column">
@@ -77,7 +88,7 @@ export default function SongList(number) {
                       })}
                     </Typography>
                     <Typography mt={6} variant="body2" color="text.secondary">
-                      ID: {song.id}
+                      Genre: {song.genre.list[song.genre.set]}
                     </Typography>
                     <Typography
                       sx={{ cursor: "pointer" }}
@@ -88,22 +99,30 @@ export default function SongList(number) {
                     </Typography>
                   </Grid>
                 </Grid>
-                <Grid item justifyContent="flex-end">
-                  <Rating
-                    name="half-rating-read"
-                    defaultValue={song.rating}
-                    precision={0.5}
-                    readOnly
-                  />
-                  <Typography
-                    display="flex"
-                    justifyContent="flex-end"
-                    sx={{ fontWeight: 800 }}
-                    color="text.secondary"
-                  >
-                    {song.rating}
-                  </Typography>
-                </Grid>
+                {song.rating[1] === 0 &&
+                song.rating[2] === 0 &&
+                song.rating[3] === 0 &&
+                song.rating[4] === 0 &&
+                song.rating[5] === 0 ? (
+                  <Typography variant="body1">No ratings yet</Typography>
+                ) : (
+                  <Grid item justifyContent="flex-end">
+                    <Rating
+                      name="half-rating-read"
+                      value={weightedAverage(song.rating).toFixed(1)}
+                      precision={0.5}
+                      readOnly
+                    />
+                    <Typography
+                      display="flex"
+                      justifyContent="flex-end"
+                      sx={{ fontWeight: 800 }}
+                      color="text.secondary"
+                    >
+                      {weightedAverage(song.rating).toFixed(1)}
+                    </Typography>
+                  </Grid>
+                )}
               </Grid>
             </Grid>
           </Paper>
