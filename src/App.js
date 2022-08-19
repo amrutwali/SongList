@@ -8,12 +8,14 @@ import AllArtists from "./Components/AllArtists";
 // Components
 import Home from "./Components/Home";
 import NavbarComponent from "./Components/Navbar/NavbarComponent";
+import PersistentDrawerLeft from "./Components/Drawer/DrawerComponent";
 import NotFound from "./Components/NotFound";
 import SongDetails from "./Components/SongDetails";
 
 const App = () => (
   <Router>
-    <NavbarComponent />
+    {/* <NavbarComponent /> */}
+    <PersistentDrawerLeft />
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/songs/:songID" element={<SongDetails />} />

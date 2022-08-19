@@ -29,11 +29,11 @@ function weightedAverage(rating) {
 
 export default function SongList(number) {
   return (
-    <Grid container mt={5} sx={{ flexGrow: 1 }} direction="column">
+    <Grid container mt={1} sx={{ flexGrow: 1 }} direction="column">
       {!data && console.log("Data not Recieved")}
       <Divider
         sx={{
-          mt: 5,
+          mt: 1,
         }}
       >
         <Typography variant="h4" color="primary">
@@ -110,7 +110,7 @@ export default function SongList(number) {
                     <Rating
                       name="half-rating-read"
                       value={weightedAverage(song.rating).toFixed(1)}
-                      precision={0.5}
+                      precision={0.1}
                       readOnly
                     />
                     <Typography
