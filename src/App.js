@@ -11,6 +11,7 @@ import NavbarComponent from "./Components/Navbar/NavbarComponent";
 import PersistentDrawerLeft from "./Components/Drawer/DrawerComponent";
 import NotFound from "./Components/NotFound";
 import SongDetails from "./Components/SongDetails";
+import Test from "./Components/Tests/Test";
 
 const App = () => (
   <Router>
@@ -22,6 +23,7 @@ const App = () => (
       <Route path="/songs" element={<AllSongs />} />
       <Route path="/artists" element={<AllArtists />} />
       <Route path="/newartist" element={<AddArtist />} />
+      <Route path="/test" element={<Test />} />
       <Route path="/*" element={<NotFound />} />
     </Routes>
   </Router>
