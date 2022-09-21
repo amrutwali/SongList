@@ -9,6 +9,8 @@ import List from "@mui/material/List";
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
+import { Link } from "react-router-dom";
+
 //ICONS
 import MenuIcon from "@mui/icons-material/Menu";
 import HomeIcon from "@mui/icons-material/Home";
@@ -73,6 +75,23 @@ const DrawerHeader = styled("div")(({ theme }) => ({
   ...theme.mixins.toolbar,
   justifyContent: "flex-end",
 }));
+
+const handleOnClick = (button) => {
+  switch (button) {
+    case 0:
+      console.log(button);
+      break;
+    case 1:
+      console.log(button);
+      break;
+
+    case 2:
+      break;
+
+    default:
+      break;
+  }
+};
 
 export default function PersistentDrawerLeft() {
   const theme = useTheme();
@@ -142,6 +161,7 @@ export default function PersistentDrawerLeft() {
             <ListItem key={text} disablePadding>
               <ListItemButton>
                 <ListItemIcon>
+                  <Link to="/abcd"></Link>
                   {index === 0 ? (
                     <HomeIcon />
                   ) : index === 1 ? (
