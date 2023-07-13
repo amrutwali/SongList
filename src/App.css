@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    padding:0;
+    background-color: #fffaff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+*::selection {
+    background-color: #e4c9ff;
+    color: #4a0095;
+}
+.max-width {
+    max-width: 1400px;
+    margin: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header {
+    display: block;
+    position: sticky;
+    top: 0;
+    height: calc(3rem + 2.4rem);
+    background-color: white;
+    box-shadow: 0px 0px 20px 2px rgba(197, 73, 255, 0.15);
+    /* x-offset y-offset blur spread*/
+    padding: 0 clamp(1rem,3vw,5rem);
+    z-index: 101;
 }
 
-.App-link {
-  color: #61dafb;
+header > nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 1.2rem 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.site-header {
+    text-transform: uppercase;
+    line-height: 3rem;
+    font-weight: 800;
+    font-size: 2rem;
+    color: #641b6b;
+}
+.site-header > span{
+    color: #d15fdb;
+}
+
+nav > ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav > ul > li {
+    list-style: none;
+    padding: 0 2rem 0 0;
+}
+nav > ul > li:hover {
+    transform: translate(0px, -0.25rem);
+    transition: all 0.5s ease;
+}
+
+li > a {
+    color:#7f0cb4;
+    align-self: center;
+}
+li > a:hover {
+    text-decoration: underline;
 }
