@@ -1,27 +1,36 @@
-import { useState, useEffect } from "react";
-import axios from "axios";
+import { useState, useEffect } from 'react';
 // API
-import API from "../API";
+import API from '../API';
 
-export const useSongsFetch = (songID) => {
-  const [state, setState] = useState([]);
+const initialState = {
+	songs: [],
+};
 
-  // useEffect(() => {
+export const useSongsFetch = () => {
+	const [state, setState] = useState(initialState);
+	const [loading, setLoading] = useState(false);
+	const [error, setError] = useState(false);
 
-  // }, []);
+	const fetchSongs = async () => {
+		try {
+			setError(false);
+			setLoading(true);
 
-  useEffect(() => {
-    let fetch = true;
-    const fetchSongs = async () => {
-      const request = await axios.get("http://localhost:4000/api/songs/");
-      if (fetch) setState(request);
-      console.log(request);
-    };
-    fetchSongs();
-    return () => {
-      fetch = false;
-    };
-  }, []);
+			const songs = await API.fetchSongs();
 
-  return { state };
+			setState(songs);
+			console.log(songs);
+		} catch (error) {
+			setError(true);
+		}
+		setLoading(false);
+	};
+
+	// Initial Render and Search
+	useEffect(() => {
+		// setState(initialState);
+		fetchSongs();
+	}, []);
+
+	return { state, loading, error };
 };

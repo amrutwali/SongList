@@ -1,4 +1,4 @@
-const API_URL = "https://localhost:4000/api/";
+const API_URL = 'http://localhost:4000/api/';
 // GET details
 const SONGS_BASE_URL = `${API_URL}songs`;
 const ARTISTS_BASE_URL = `${API_URL}artists`;
