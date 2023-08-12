@@ -1,0 +1,215 @@
+{
+  "songs": [
+    {
+      "genre": {
+        "set": 3,
+        "list": [
+          "None",
+          "Electronic Dance Music",
+          "Rock",
+          "Jazz",
+          "Dubstep",
+          "Rhythm and Blues",
+          "Country Music",
+          "Pop Music"
+        ]
+      },
+      "_id": "6304ee447a75f5f99fc6698c",
+      "title": "Am I Wrong",
+      "artist": [
+        "Nico & Vinz"
+      ],
+      "date": "2013-04-12T00:00:00.000Z",
+      "rating": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0
+      },
+      "url": "https://ia600200.us.archive.org/8/items/mbid-5dacb6f1-b2b2-46b0-b6b0-5b4d5266cec3/mbid-5dacb6f1-b2b2-46b0-b6b0-5b4d5266cec3-6253105112_thumb500.jpg",
+      "__v": 0
+    },
+    {
+      "genre": {
+        "set": 1,
+        "list": [
+          "None",
+          "Electronic Dance Music",
+          "Rock",
+          "Jazz",
+          "Dubstep",
+          "Rhythm and Blues",
+          "Country Music",
+          "Pop Music"
+        ]
+      },
+      "_id": "6304ee7b7a75f5f99fc6698f",
+      "title": "Titanium",
+      "artist": [
+        "David Guetta",
+        "Sia"
+      ],
+      "date": "2011-06-01T00:00:00.000Z",
+      "rating": {
+        "1": 0,
+        "2": 3,
+        "3": 0,
+        "4": 8,
+        "5": 4
+      },
+      "url": "https://ia801209.us.archive.org/31/items/mbid-6460457d-ff6c-4001-bfd7-2f84202077f3/mbid-6460457d-ff6c-4001-bfd7-2f84202077f3-14869027128.jpg",
+      "__v": 0
+    },
+    {
+      "genre": {
+        "set": 7,
+        "list": [
+          "None",
+          "Electronic Dance Music",
+          "Rock",
+          "Jazz",
+          "Dubstep",
+          "Rhythm and Blues",
+          "Country Music",
+          "Pop Music"
+        ]
+      },
+      "_id": "6304ee897a75f5f99fc66991",
+      "title": "Heat Waves",
+      "artist": [
+        "Glass Animals"
+      ],
+      "date": "2020-05-19T00:00:00.000Z",
+      "rating": {
+        "1": 0,
+        "2": 1,
+        "3": 4,
+        "4": 0,
+        "5": 2
+      },
+      "url": "https://ia601903.us.archive.org/35/items/mbid-532c81ff-1867-43f3-ac21-3f1ecfa2db07/mbid-532c81ff-1867-43f3-ac21-3f1ecfa2db07-26608390428.jpg",
+      "__v": 0
+    },
+    {
+      "genre": {
+        "set": 7,
+        "list": [
+          "None",
+          "Electronic Dance Music",
+          "Rock",
+          "Jazz",
+          "Dubstep",
+          "Rhythm and Blues",
+          "Country Music",
+          "Pop Music"
+        ]
+      },
+      "_id": "64b21fa66f2ecc1dc5fbb1d1",
+      "title": "Thunder",
+      "artist": [
+        "Imagine Dragons"
+      ],
+      "date": "2017-04-26T00:00:00.000Z",
+      "rating": {
+        "1": 0,
+        "2": 1,
+        "3": 4,
+        "4": 0,
+        "5": 2
+      },
+      "url": "https://coverartarchive.org/release-group/ddb98c9f-6f42-4734-88f0-0c7c05d301d3/front",
+      "__v": 0
+    },
+    {
+      "genre": {
+        "set": 7,
+        "list": [
+          "None",
+          "Electronic Dance Music",
+          "Rock",
+          "Jazz",
+          "Dubstep",
+          "Rhythm and Blues",
+          "Country Music",
+          "Pop Music"
+        ]
+      },
+      "_id": "64b2500bf33a54e08a6caf2b",
+      "title": "Alive",
+      "artist": [
+        "Sia"
+      ],
+      "date": "2015-09-24T00:00:00.000Z",
+      "rating": {
+        "1": 0,
+        "2": 1,
+        "3": 4,
+        "4": 0,
+        "5": 2
+      },
+      "url": "https://coverartarchive.org/release-group/ae6d0cf5-429e-405b-a888-4c148666fdba/front",
+      "__v": 0
+    },
+    {
+      "genre": {
+        "set": 7,
+        "list": [
+          "None",
+          "Electronic Dance Music",
+          "Rock",
+          "Jazz",
+          "Dubstep",
+          "Rhythm and Blues",
+          "Country Music",
+          "Pop Music"
+        ]
+      },
+      "_id": "64b250a1f33a54e08a6caf2d",
+      "title": "Unstoppable",
+      "artist": [
+        "Sia"
+      ],
+      "date": "2016-01-21T00:00:00.000Z",
+      "rating": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0
+      },
+      "url": "https://coverartarchive.org/release-group/bf8cd3d6-40ff-4b7a-b31f-9949087eb694/front",
+      "__v": 0
+    },
+    {
+      "genre": {
+        "set": 7,
+        "list": [
+          "None",
+          "Electronic Dance Music",
+          "Rock",
+          "Jazz",
+          "Dubstep",
+          "Rhythm and Blues",
+          "Country Music",
+          "Pop Music"
+        ]
+      },
+      "_id": "64b25144f33a54e08a6caf33",
+      "title": "Sorry",
+      "artist": [
+        "Justin Bieber"
+      ],
+      "date": "2016-01-21T00:00:00.000Z",
+      "rating": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0
+      },
+      "url": "https://ia600200.us.archive.org/11/items/mbid-6818723a-ba44-4e7d-aed8-cfeafc450e3a/mbid-6818723a-ba44-4e7d-aed8-cfeafc450e3a-12656705747.png",
+      "__v": 0
+    }
+  ]
+}

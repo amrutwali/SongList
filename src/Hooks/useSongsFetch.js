@@ -20,6 +20,7 @@ export const useSongsFetch = () => {
 
       setState(songs)
       console.log(songs)
+      sessionStorage.setItem('songs', JSON.stringify(songs))
     } catch (error) {
       setError(true)
     }

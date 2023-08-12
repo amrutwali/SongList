@@ -1,0 +1,74 @@
+{
+  "artists": [
+    {
+      "_id": "64b23e0c01e806d116852f64",
+      "firstname": "David",
+      "lastname": "Guetta",
+      "url": "https://lh3.googleusercontent.com/Nm_nq9JlS9WNx94meVL8AUgW-n7LzliJDYvWLrR-2ubFWQED1YQJKTv1AEV0s1gKiA3QKdY7lgimbFY=w1920-h1920-p-l90-rj",
+      "__v": 0
+    },
+    {
+      "_id": "64b241cc9537e74c7386a32e",
+      "firstname": "Imagine",
+      "lastname": "Dragons",
+      "url": "https://lh3.googleusercontent.com/TAadzeojHFGU1EJ5jnOWDn6K8Cf8O2x0F04PVxnZwUEhcaYN0pA0dic49VU7OKGs7oovBTylWx70xhY=w1920-h1920-p-l90-rj",
+      "__v": 0
+    },
+    {
+      "_id": "64b2427795eea01ed16c940b",
+      "firstname": "Sia",
+      "lastname": "",
+      "url": "https://lh3.googleusercontent.com/cJIlkCRDYaNXUa88D4-cbQ059zyijbWwWbnJO3MjFPvXr3WI4eGUCNiu-bPVf-DpyxeCArx4gULFkII=w1365-h1365-p-l90-rj",
+      "__v": 0
+    },
+    {
+      "_id": "64b2428795eea01ed16c940d",
+      "firstname": "Justin",
+      "lastname": "Bieber",
+      "url": "https://lh3.googleusercontent.com/iVttpMqOcjor_Rt64WqL0iB8YJ3At97IGNer6qzhYQ7ffoqzVL7pEmxJXmItcZ2Sj_aRT_dewAg1ORg=w1920-h1920-p-l90-rj",
+      "__v": 0
+    },
+    {
+      "_id": "64b2437b95eea01ed16c940f",
+      "firstname": "Selena",
+      "lastname": "Gomez",
+      "url": "https://lh3.googleusercontent.com/l5JLWYHNwbO5OCXRqAnYYbYOqHQHuk6JWW0QNCJfqSeENITKrgBRDva-qr-rrwibImHpQyyNYA2f1IY=w1920-h1920-p-l90-rj",
+      "__v": 0
+    },
+    {
+      "_id": "64b2439c95eea01ed16c9411",
+      "firstname": "Eminem",
+      "lastname": "",
+      "url": "https://lh3.googleusercontent.com/P-rYd_7rYsYjsHg9LwlI-66FpHn3dCSSuoFof_cCf08LWFEfZe4h94-pKnEXvut926ouTf6QU6849Q=w1920-h1920-p-l90-rj",
+      "__v": 0
+    },
+    {
+      "_id": "64b2441695eea01ed16c9413",
+      "firstname": "The",
+      "lastname": "Weeknd",
+      "url": "https://lh3.googleusercontent.com/U-SAmNOu4TynE818gLCfKsuHZ0U5YNEtO9mrjSI9WCCKERs98LzrCal5kajBBTQNwdcisoB2Bn-pHp4=w1920-h1920-p-l90-rj",
+      "__v": 0
+    },
+    {
+      "_id": "64b2444f95eea01ed16c9415",
+      "firstname": "Charlie",
+      "lastname": "Puth",
+      "url": "https://lh3.googleusercontent.com/1uG4RyrHQBid2gA0Nezc2I-elPnfeLDlTK4p9bQdnhs6hJHqq1PDszbFNKc0Dd-spBTHn1sVoIabIg=w1920-h1920-p-l90-rj",
+      "__v": 0
+    },
+    {
+      "_id": "64b2448a95eea01ed16c9417",
+      "firstname": "Rihanna",
+      "lastname": "",
+      "url": "https://lh3.googleusercontent.com/6EZ6nHUoi96zJ9ijYyDrBfSZ_1pY64QQqJUqyWKA-Uy9Gzoio7gFTReBruJJRCjjuQQyHES7pIQchTkT=w1920-h1920-p-l90-rj",
+      "__v": 0
+    },
+    {
+      "_id": "64b24f33f33a54e08a6caf25",
+      "firstname": "Nico &",
+      "lastname": "Vinz",
+      "url": "https://pbs.twimg.com/profile_images/926200687658070016/ipXf2YN8_400x400.jpg",
+      "__v": 0
+    }
+  ]
+}

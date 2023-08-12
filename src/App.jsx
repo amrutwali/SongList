@@ -11,6 +11,9 @@ import Dashboard from './Components/Dashboard'
 import './App.css'
 import twitterX from './Assets/icons/twitterx.svg'
 import github from './Assets/icons/github-mark.svg'
+// constants
+import songs from './Constants/songs.json'
+import artists from './Constants/artists.json'
 
 function App() {
   const [navClassList, setNavClassList] = useState([])
@@ -25,6 +28,10 @@ function App() {
 
     setNavClassList(_classList)
   }, [scroll.y, scroll.lastY])
+
+  // update local storage with constant data
+  sessionStorage.setItem('artists', JSON.stringify(artists))
+  sessionStorage.setItem('songs', JSON.stringify(songs))
 
   return (
     <BrowserRouter>
