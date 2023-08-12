@@ -3,33 +3,33 @@ import { useState, useEffect } from 'react'
 import API from '../API'
 
 const initialState = {
-  songs: [],
+  artists: [],
 }
 
-export const useSongsFetch = () => {
+export const useArtistsfetch = () => {
   const [state, setState] = useState(initialState)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(false)
 
-  const fetchSongs = async () => {
+  const fetchArtists = async () => {
+    setLoading(true)
+    setError(false)
     try {
-      setError(false)
-      setLoading(true)
-
-      const songs = await API.fetchSongs()
-
-      setState(songs)
-      console.log(songs)
+      const artists = await API.fetchArtists()
+      setState(artists)
+      console.log(artists)
+      sessionStorage.setItem('artists', JSON.stringify(artists))
     } catch (error) {
       setError(true)
+      console.log(error)
     }
     setLoading(false)
   }
 
-  // Initial Render and Search
+  // Initial render and search
+
   useEffect(() => {
-    // setState(initialState);
-    fetchSongs()
+    fetchArtists()
   }, [])
 
   return { state, loading, error }

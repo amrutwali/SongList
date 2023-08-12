@@ -1,0 +1,69 @@
+.artists {
+  width: 100%;
+  padding: clamp(1rem, 5vw, 4rem);
+  height: auto;
+}
+
+h1 {
+  margin-bottom: clamp(1rem, 5vw, 4rem);
+  font-size: clamp(3rem, 15vw, 4rem);
+  color: var(--clr-accent);
+}
+
+p {
+  color: #8f6d92;
+}
+
+.list {
+  display: grid;
+  margin-top: 4rem;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: auto;
+  padding: 1rem;
+  box-shadow: 0px 0px 30px -5px rgba(197, 73, 255, 0.15);
+  border-radius: 0.5rem;
+  aspect-ratio: 1/1;
+  background-color: white;
+  color: #641b6b;
+  position: relative;
+}
+
+.card>h3 {
+  margin: 1rem 0 0 0;
+}
+
+.card>p {
+  margin: auto 0 0 0;
+  padding-top: 0.5rem;
+  width: 100%;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+.card>img {
+  margin: auto;
+  height: 70%;
+  width: 70%;
+  border-radius: 50%;
+  /* border: 1px solid #f8b0ff; */
+  box-shadow: 0px 0px 30px 0px rgba(197, 73, 255, 0.25);
+}
+
+.card:hover {
+  box-shadow: 0px 0px 30px 5px rgba(197, 73, 255, 0.15);
+  transition: all 0.5s ease;
+}
+
+.card:active {
+  /* box-shadow: 0px 0px 30px 5px rgba(197, 73, 255, 0.15); */
+  border-style: outset;
+  border: 1px solid #f8b0ff;
+  transition: box-shadow 0.5s ease;
+}

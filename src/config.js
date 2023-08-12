@@ -1,7 +1,7 @@
-const API_URL = 'http://localhost:4000/api/';
+const API_URL = 'http://localhost:4000/api/'
 // GET details
-const SONGS_BASE_URL = `${API_URL}songs`;
-const ARTISTS_BASE_URL = `${API_URL}artists`;
+const SONGS_BASE_URL = `${API_URL}songs`
+const ARTISTS_BASE_URL = `${API_URL}artists`
 // Other endpoints
 
-export { SONGS_BASE_URL, ARTISTS_BASE_URL };
+export { SONGS_BASE_URL, ARTISTS_BASE_URL }

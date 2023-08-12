@@ -1,0 +1,15 @@
+build
+coverage
+
+**/.*
+
+**/*.json
+
+**/*.html
+
+**/.git
+**/.svn
+**/.hg
+**/node_modules
+**/Assets/**
+**/public/**.*
