@@ -1,11 +1,12 @@
 .artists {
   width: 100%;
-  padding: clamp(1rem, 5vw, 4rem);
+  margin-block: clamp(1rem, 5vw, 4rem);
+  padding-inline: clamp(1rem, 5vw, 4rem);
   height: auto;
 }
 
 h1 {
-  margin-bottom: clamp(1rem, 5vw, 4rem);
+  margin-block: clamp(1rem, 5vw, 4rem);
   font-size: clamp(3rem, 15vw, 4rem);
   color: var(--clr-accent);
 }

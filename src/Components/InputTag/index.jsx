@@ -2,7 +2,7 @@ import React, { Fragment, useState, useRef } from 'react'
 import { useArtistsfetch } from '../../Hooks/useArtistsFetch'
 
 const InputTag = () => {
-  const { state, loading, error } = useArtistsfetch()
+  // const { state, loading, error } = useArtistsfetch()
   const [value, setValue] = useState('')
   const [tagList, setTagList] = useState([])
   const inputRef = useRef();

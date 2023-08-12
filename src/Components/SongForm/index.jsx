@@ -50,7 +50,7 @@ const SongForm = () => {
           })}
         </select>
       </div>
-      <button type='submit'>Add Artist</button>
+      <button type='submit'>Add Song</button>
     </form>
   )
 }
