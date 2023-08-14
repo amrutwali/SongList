@@ -12,6 +12,11 @@
   "plugins": [],
   "rules": {
     "no-unused-vars": "warn",
-    "react/prop-types": "off"
+    "react/prop-types": "off",
+    "quotes": [
+      "warn",
+      "single",
+      { "avoidEscape": true, "allowTemplateLiterals": false }
+    ]
   }
 }

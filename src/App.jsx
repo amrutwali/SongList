@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react'
-import useScrollListener from './Hooks/useScrollListener'
+import React from 'react'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 // components
 import Home from './Components/Home'
@@ -16,18 +15,21 @@ import songs from './Constants/songs.json'
 import artists from './Constants/artists.json'
 
 function App() {
-  const [navClassList, setNavClassList] = useState([])
-  const scroll = useScrollListener()
 
-  // update classList of nav on scroll
-  useEffect(() => {
-    const _classList = []
+  const handleMenuToggle = () => {
+    const button = document.querySelector('.hamburger-menu');
+    const menu = document.querySelector('.navlist');
 
-    if (scroll.y > 150 && scroll.y - scroll.lastY > 0)
-      _classList.push('nav-bar--hidden')
+    const visible = menu.getAttribute('data-visible')
 
-    setNavClassList(_classList)
-  }, [scroll.y, scroll.lastY])
+    if (visible === 'false') {
+      menu.setAttribute('data-visible', true)
+      button.setAttribute('aria-expanded', true)
+    } else {
+      menu.setAttribute('data-visible', false)
+      button.setAttribute('aria-expanded', false)
+    }
+  }
 
   // update local storage with constant data
   sessionStorage.setItem('artists', JSON.stringify(artists))
@@ -35,12 +37,13 @@ function App() {
 
   return (
     <BrowserRouter>
-      <header className={navClassList.join(' ')}>
-        <nav className='max-width'>
+      <header className='head'>
+        <nav className='max-width' >
           <Link className='site-header' to='/'>
             Song<span>ify</span>
           </Link>
-          <ul>
+          <button className='hamburger-menu color-filter' aria-controls='navlist' aria-expanded='false' onClick={handleMenuToggle}></button>
+          <ul id='navlist' className='navlist' data-visible='false' onClick={handleMenuToggle}>
             <li>
               <Link to='/songs'>Songs</Link>
             </li>

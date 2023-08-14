@@ -1,5 +1,6 @@
 import React from 'react'
 import InputTag from '../InputTag'
+import Select from '../Select'
 
 const SongForm = () => {
   return (
@@ -29,26 +30,15 @@ const SongForm = () => {
       </div>
       <div className='inputContainer'>
         <label htmlFor='genre'>Genre</label>
-        <select defaultValue='None' name='genre' id='genre'>
-          <option value='None' disabled hidden>
-            None
-          </option>
-          {[
-            'Electronic Dance Music',
-            'Rock',
-            'Jazz',
-            'Dubstep',
-            'Rhythm and Blues',
-            'Country Music',
-            'Pop Music',
-          ].map((item, index) => {
-            return (
-              <option key={index} value={index + 1}>
-                {item}
-              </option>
-            )
-          })}
-        </select>
+        <Select options={[
+          'Electronic Dance Music',
+          'Rock',
+          'Jazz',
+          'Dubstep',
+          'Rhythm and Blues',
+          'Country Music',
+          'Pop Music',
+        ]} name={'genre'} />
       </div>
       <button type='submit'>Add Song</button>
     </form>

@@ -8,7 +8,7 @@
 h1 {
   margin-block: clamp(1rem, 5vw, 4rem);
   font-size: clamp(3rem, 15vw, 4rem);
-  color: var(--clr-accent);
+  color: var(--clr-primary);
 }
 
 h2 {
@@ -23,8 +23,8 @@ h2 {
 
 .form-grid {
   display: grid;
-  /* grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr)); */
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  /* grid-template-columns: 1fr; */
   gap: 3rem;
 }
 
@@ -44,34 +44,71 @@ form {
   flex-direction: column;
   /* height: fit-content; */
   gap: 2rem;
-  color: var(--clr-accent);
+  color: var(--clr-text);
+}
+
+form label {
+  color: var(--clr-primary);
 }
 
 .inputContainer input,
-select {
+.select {
   padding: 1rem;
-  box-shadow: 0px 0px 30px 0px rgba(197, 73, 255, 0.15);
+  box-shadow: 0px 0px 20px -5px rgba(197, 73, 255, 0.15);
   border-radius: 0.5rem;
 }
 
-.inputContainer select>option:hover {
-  background-color: #e4c9ff;
-  color: #4a0095;
+.inputContainer .option {
+  background-color: white;
+  /* position: absolute; */
+  outline: 1px solid var(--clr-accent);
+  border-radius: 0 0 0.5rem 0.5rem;
+  transform-origin: top left;
+  transform: translateY(-0.75rem);
+  width: 100%;
+  z-index: 100;
+}
+
+.inputContainer .select:has(~.option) {
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.inputContainer .option ul {
+  margin: 0;
+  padding: 0;
+}
+
+.inputContainer .option li {
+  padding: 0.5rem;
+  color: var(--clr-select);
+  /* } */
+
+  /* .inputContainer select option { */
+  list-style: none;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.inputContainer .option li:hover {
+  border-radius: 0.5rem;
+  background-color: var(--clr-primary);
+  color: white;
+  cursor: pointer;
 }
 
 .form button {
   padding: 1rem;
   margin-top: auto;
   color: white;
-  background-color: var(--clr-accent);
+  background-color: var(--clr-primary);
   border-radius: 0.5rem;
   width: fit-content;
 }
 
 .inputContainer input:focus,
-select:focus {
-  box-shadow: none;
-  outline: 1px solid var(--clr-secondary);
+.select:focus {
+  outline: 1px solid var(--clr-accent);
+  box-shadow: 0px 0px 40px 0px rgba(197, 73, 255, 0.15);
 }
 
 .tag-container {
@@ -80,7 +117,7 @@ select:focus {
   justify-content: stretch;
   flex-direction: row;
   flex-wrap: wrap;
-  box-shadow: 0px 0px 30px 0px rgba(197, 73, 255, 0.15);
+  box-shadow: 0px 0px 20px -5px rgba(197, 73, 255, 0.15);
   border-radius: 0.5rem;
 }
 
@@ -88,7 +125,7 @@ select:focus {
   padding: 0.5rem 0.75rem;
   margin: 0.5rem;
   margin-right: 0;
-  background-color: var(--clr-accent);
+  background-color: var(--clr-primary);
   color: white;
   border-radius: 0.5rem;
   height: fit-content;
@@ -114,13 +151,14 @@ select:focus {
 
 .tag-container:has(.tag-input:focus) {
   box-shadow: none;
-  outline: 1px solid var(--clr-secondary);
+  outline: 1px solid var(--clr-accent);
+  box-shadow: 0px 0px 40px 0px rgba(197, 73, 255, 0.15);
 }
 
 .tag-popup {
   background-color: white;
   /* position: absolute; */
-  outline: 1px solid var(--clr-secondary);
+  outline: 1px solid var(--clr-accent);
   border-radius: 0 0 0.5rem 0.5rem;
   transform-origin: top left;
   transform: translateY(-0.75rem);
@@ -141,7 +179,7 @@ select:focus {
 
 .tag-popup li:hover {
   border-radius: 0.5rem;
-  background-color: var(--clr-accent);
+  background-color: var(--clr-primary);
   color: white;
   cursor: pointer;
 }
