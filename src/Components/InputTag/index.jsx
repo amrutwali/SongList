@@ -15,6 +15,11 @@ const InputTag = () => {
     setValue('');
   }
 
+  window.addEventListener('click', (e) => {
+    if (e.target !== document.querySelector('.tag-container') && e.target !== document.querySelector('.tag-popup'))
+      setValue('');
+  })
+
   const handleRemove = (e) => {
     e.stopPropagation();
     setTagList(tagList.filter(item => item !== e.target.innerText))

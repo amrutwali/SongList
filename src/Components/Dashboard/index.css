@@ -24,7 +24,7 @@ h2 {
 .form-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  /* grid-template-columns: 1fr; */
+  /* grid-template-columns: 1fr 1fr; */
   gap: 3rem;
 }
 
@@ -58,9 +58,16 @@ form label {
   border-radius: 0.5rem;
 }
 
-.inputContainer .option {
+.inputContainer {
+  position: relative;
+}
+
+.option {
+  position: absolute;
+  top: 5.9rem;
+  height: 10rem;
+  overflow-y: scroll;
   background-color: white;
-  /* position: absolute; */
   outline: 1px solid var(--clr-accent);
   border-radius: 0 0 0.5rem 0.5rem;
   transform-origin: top left;
@@ -72,6 +79,8 @@ form label {
 .inputContainer .select:has(~.option) {
   border-radius: 0.5rem 0.5rem 0 0;
 }
+
+
 
 .inputContainer .option ul {
   margin: 0;
@@ -98,6 +107,7 @@ form label {
 
 .form button {
   padding: 1rem;
+  justify-self: flex-end;
   margin-top: auto;
   color: white;
   background-color: var(--clr-primary);
@@ -156,8 +166,11 @@ form label {
 }
 
 .tag-popup {
+  position: absolute;
+  top: 5.9rem;
+  height: min(40vh, 15rem);
+  overflow-y: scroll;
   background-color: white;
-  /* position: absolute; */
   outline: 1px solid var(--clr-accent);
   border-radius: 0 0 0.5rem 0.5rem;
   transform-origin: top left;
@@ -182,4 +195,18 @@ form label {
   background-color: var(--clr-primary);
   color: white;
   cursor: pointer;
+}
+
+@media screen and (width <=600px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .option {
+    position: static;
+  }
+
+  .tag-popup {
+    position: static;
+  }
 }
