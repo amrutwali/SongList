@@ -168,7 +168,8 @@ form label {
 .tag-popup {
   position: absolute;
   top: 5.9rem;
-  height: min(40vh, 15rem);
+  height: max-content;
+  max-height: min(11rem, 40vh);
   overflow-y: scroll;
   background-color: white;
   outline: 1px solid var(--clr-accent);
